@@ -3,7 +3,6 @@ NAME			=	ex03.out
 CXX				=	c++
 CXXFLAGS		=	-Wall -Wextra -Werror -std=c++98
 
-# SRCS			=	$(wildcard *.cpp)
 SRCS			=	main.cpp Fixed.cpp Point.cpp bsp.cpp
 
 OBJS_PATH		=	objs/

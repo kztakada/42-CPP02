@@ -5,23 +5,21 @@
 
 // Constructors
 Fixed::Fixed() : _rawBits(0) {
-    // std::cout << "Default constructor called" << std::endl;
+    std::cout << "Default constructor called" << std::endl;
 }
 
 Fixed::Fixed(int const raw) {
-    // std::cout << "Int constructor called" << std::endl;
+    std::cout << "Int constructor called" << std::endl;
     this->_rawBits = raw << _numOfFractionalBits;
 }
 
 Fixed::Fixed(float const raw) {
-    // std::cout << "Float constructor called" << std::endl;
+    std::cout << "Float constructor called" << std::endl;
     this->_rawBits = roundf(raw * (1 << _numOfFractionalBits));
 }
 
 // Destructor
-Fixed::~Fixed() {
-    // std::cout << "Destructor called" << std::endl;
-}
+Fixed::~Fixed() { std::cout << "Destructor called" << std::endl; }
 
 // Copy constructor
 Fixed::Fixed(Fixed const &other) {

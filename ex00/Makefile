@@ -1,9 +1,9 @@
-NAME			=	ex00
+NAME			=	ex00.out
 
 CXX				=	c++
 CXXFLAGS		=	-Wall -Wextra -Werror -std=c++98
 
-SRCS			=	$(wildcard *.cpp)
+SRCS			=	main.cpp Fixed.cpp
 
 OBJS_PATH		=	objs/
 OBJS			=	$(SRCS:%.cpp=objs/%.o)
